@@ -1,3 +1,4 @@
+celsius = 50
 
 def convertCelsiusToKelvin(celsius):
     """Takes in a float representing a Celsius measurement, and returns that temperature converted into Kelvins"""
