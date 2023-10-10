@@ -9,9 +9,9 @@ class celsius(unittest.TestCase):
 
 def test_to_temperature_known_values(self):
     '''to_roman should give known result with known input'''
-    for integer, numeral in self.known_values:
-        result = roman1.to_roman(integer)
-        self.assertEqual(numeral, result)
+    for integer, number in self.known_values:
+        result = integer
+        self.assertEqual(result)
 
 if __name__ == '__main__':
     unittest.main()
@@ -24,4 +24,20 @@ def convertCelsiusToKelvin(celsius):
 def convertCelsiusToFahrenheit(celsius):
     """Takes in a float representing a Celsius measurement, and returns that temperature converted into Fahrenheit"""
     fahrenheit = ((celsius*9/5)+32)
+    return fahrenheit
+
+def convertFahrenheitToCelsius(fahrenheit):
+    celsius = ((fahrenheit-32)*(5/9))
+    return celsius
+
+def convertFahrenheitToKelvin(fahrenheit):
+    kelvins = ((fahrenheit+459.67)*(5/9))
+    return kelvins
+
+def convertKelvinsToCelsius(kelvins):
+    celsius = (kelvins-273.15)
+    return celsius
+
+def convertKelvinsToFahrenheit(kelvins):
+    fahrenheit = ((kelvins*(9/5)-459.67))
     return fahrenheit
