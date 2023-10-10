@@ -8,7 +8,6 @@ class celsius(unittest.TestCase):
                     24)
 
 def test_to_temperature_known_values(self):
-    '''to_roman should give known result with known input'''
     for integer, number in self.known_values:
         result = integer
         self.assertEqual(result)
