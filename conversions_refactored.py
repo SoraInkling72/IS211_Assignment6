@@ -1,5 +1,5 @@
 def fromUnit:
-    ''''convert unit of measurement into another'''
+    '''convert one unit of measurement into another'''
 
 
 def toUnit:
